@@ -1,0 +1,39 @@
+public class palindromeChecker
+{
+    /*
+    Check if something is palindrome
+    Will return true or false if it is or not
+    */
+    
+    // global variables
+    String word;
+    int k = 0;
+    int h = word.length() - 1;
+    
+    public static void main (String[] args)
+    {
+        System.out.println("Please type in a word: ");
+        word = scanner.nextLine();
+        palCheck(word);
+    }
+    
+    public boolean palCheck(String str)
+    {
+        while(k < h)
+        {
+            if(str.charAt(k) != str.charAt(h))
+            {
+                return false;
+            }
+            else
+            {
+                return true;
+            }
+            k++;
+            h--;
+        }
+        return null;
+    }
+    
+    
+}
